@@ -30,8 +30,14 @@ hr {
   text-decoration: none;
   color: #292a2c;
 }
-.link:hover {
+.link:hover:not(.back-link) {
   color: black;
+}
+.back-link {
+  background-color: black;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
 }
 
 /* lists */
@@ -64,7 +70,9 @@ hr {
 .ow {
   background-color: var(--off-white);
 }
-
+.written {
+  text-align: center;
+}
 /* footer */
 footer {
   background-color: var(--primary-color);
