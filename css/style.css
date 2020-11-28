@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+:root {
+  --primary-color: #14100d;
+  --dark-gray: #292a2c;
+  --off-white: #f3f4f6;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+
+  margin: 0;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+/* container */
+.container {
+  padding: 0 1rem;
+  max-width: 800px;
+  margin: auto;
+}
+/* .container-center {
+  max-width: 600px;
+  margin: auto;
+} */
+
+/* links */
+.link {
+  text-decoration: none;
+  color: #292a2c;
+}
+.link:hover {
+  color: black;
+}
+
+/* .primary-link {
+  background-color: var(--primary-color);
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: bold;
+}
+.secondary-link {
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+} */
+
+/* lists */
+.list-non-bullet {
+  list-style-type: none;
+}
+.list-inline-item {
+  display: inline;
+  padding: 1rem;
+}
+
+/* nav */
+.navigation {
+  text-align: center;
+  color: black;
+  background-color: white;
+  padding: 3rem;
+  position: sticky;
+  top: 0;
+}
+.navigation .nav-heading {
+  font-size: large;
+  font-weight: bold;
+}
+/* .navigation .link {
+  color: white;
+  font-size: 1.1rem;
+}
+.nav-brand {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+  font-weight: bold;
+}
+.nav-pills {
+  display: flex;
+  justify-content: flex-end;
+}
+.link-active {
+  font-weight: bold;
+}
+
+/* header */
+/* .hero {
+  padding: 2rem 0;
+}
+.hero .hero-image {
+  max-width: 350px;
+  display: block;
+  margin: auto;
+}
+.hero .hero-heading {
+  font-size: 2.1rem;
+  text-align: center;
+  color: var(--dark-gray);
+  padding-top: 1rem;
+}
+.hero .hero-heading .hero-inverted {
+  color: var(--primary-color);
+}
+*/
+.blog-content {
+  text-align: justify;
+}
+/* section*/
+.command {
+  padding: 1.5rem 0 1.5rem 3rem;
+  font-style: italic;
+}
+.ow {
+  background-color: var(--off-white);
+}
+
+/* footer */
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  padding: 0.5rem;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+footer .link {
+  color: white;
+}
+footer ul {
+  padding-inline-start: 0px;
+}

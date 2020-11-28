@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>DummyBlog</title>
+</head>
+
+<body>
+    <nav class="container navigation">
+        <div class="nav-heading">Ram's Blog</div>
+    </nav>
+    <div class="container">
+        <div>
+            <section>
+                <small>27th November,2020</small>
+                <h2> Setting up Virtual Environment for a Django Project </h2>
+                <p class="blog-content">In this blog, we are going to see what is a virtual environment and it's
+                    advantages, and how to set
+                    it up in Ubuntu for
+                    a Django project.
+                </p>
+                <h4>Virtual Environment:</h4>
+                <p class="blog-content">
+                    A virtual environment can have different versions of libraries, packages, and interpreters which are
+                    isolated from other
+                    virtual environments or global environment.A virtual environment is a directory tree which contains
+                    Python executable files and other files which indicate that it
+                    is a virtual environment.
+                </p>
+                <h4>Why Virtual Environment?</h4>
+                <p class="blog-content">
+                    By default, every project on our system will use these same directories to store and retrieve
+                    packages (third party
+                    libraries). Imagine a scenario where we have to develop two applications and we have Django 2.x and
+                    Django3.x installed
+                    globally. In such a case, it would be difficult for python to differentiate the packages as they are
+                    residing under the
+                    same directory. So we create a different environment for each project so that it won't consider
+                    looking for any globally
+                    installed packages as it checks only the packages that are installed in the virtual environment. In
+                    this way, the dependencies will
+                    be isolated from the
+                    global (system) environment.
+                </p>
+                <h4>Steps for setting up Virtual Environment</h4>
+                <ol>
+                    <li>
+                        Installing virtualenv module
+                        <p>We use a module called <b>virtualenv</b>. We can install it by the following command</p>
+                        <p class="command ow">pip install virtualenv</p>
+                    </li>
+                    <li>
+                        Creating Virtual Environment
+                        <p>When we create virtual environment it copies all python binary files from actual system
+                            directory to current directory</p>
+                        <p class="command ow">virtualenv env_name</p>
+                        <p>* Here env_name is the environment name, you can choose any name</p>
+                    </li>
+                    <li>
+                        Choosing python version to be used in virtual environment
+                        <p>When we have more than one version of python installed on our machine then we can choose
+                            which version to be used in virtual environment by the following command</p>
+                        <p class="command ow">virtualenv -p /usr/bin/python3.8 env_name</p>
+                        <p>In this case we have choosed python3.8</p>
+                    </li>
+                    <li>
+                        Activating Virtual Environment
+                        <p>To use the virtual environment that we just created we need to activate it by the following
+                            command</p>
+                        <p class="command ow">source env_name/bin/activate</p>
+                        <p>Now this command will take us to our virtual environment</p>
+                    </li>
+                    <li>
+                        Installing Required packages
+                        <p>We use pip to install the required packages</p>
+                        <p class="command ow">pip install django</p>
+                    </li>
+                    <li>
+                        Checking installed packages
+                        <p>In order to check the packages installed we can use the following command.</p>
+                        <p class="command ow">pip freeze</p>
+                        <p>This command will list all the packages that were installed.</p>
+                    </li>
+                    <li>
+                        Exiting from virtual environment
+                        <p>In order to exit from the virtual enviroment we can use the following command.</p>
+                        <p class="command ow">deactivate</p>
+                    </li>
+                </ol>
+                <div>
+                    <p class="blog-content">
+                        I covered the basics as well as the commands required for creating virtual environment for a
+                        python project.
+                    </p>
+                </div>
+            </section>
+            <hr>
+            <p>Written by Rampranav</p>
+        </div>
+        <a class="link" href="/index.html">Back</a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p>© Copyright</p>
+    </footer>
+</body>
+
+</html>
